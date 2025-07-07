@@ -7,5 +7,6 @@ default:
     && {{ justfile_directory() }}/configure \
             --prefix={{ justfile_directory() }}/freesasa_install \
             --enable-check \
-        && make \
-        && make install
+        && bear -- make \
+        && make install \
+        && bear --append -- make check

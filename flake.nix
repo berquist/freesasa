@@ -37,6 +37,8 @@
               json_c
               libxml2
               pkg-config
+
+              bear
             ];
           };
         }
