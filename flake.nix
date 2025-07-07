@@ -32,7 +32,11 @@
             packages = with pkgs; [
               autoconf
               automake
+              check
               gcc
+              json_c
+              libxml2
+              pkg-config
             ];
           };
         }
