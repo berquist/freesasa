@@ -23,6 +23,15 @@
             pkgs = import nixpkgs { inherit system; };
           }
         );
+
+      # pkgs-for-check = import (builtins.fetchGit {
+      #   name = "pkgs-for-check";
+      #   url = "https://github.com/NixOS/nixpkgs/";
+      #   ref = "refs/heads/nixpkgs-unstable";
+      #   # 0.15.0
+      #   rev = "e296e89d75ab8aa1d0eed1c3688883a4f7937515";
+      # }) { };
+
     in
     {
       devShells = forAllSystems (
