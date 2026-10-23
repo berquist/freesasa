@@ -111,7 +111,6 @@
           # Coverage (--enable-gcov), debugging, and editor tooling.
           pkgs.lcov
           pkgs.gdb
-          pkgs.valgrind
           pkgs.clang-tools
         ];
 
